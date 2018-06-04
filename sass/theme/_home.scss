@@ -1,0 +1,369 @@
+/* ================================= */
+/* HOME PAGE ======================= */
+/* ================================= */
+
+.featuredProject {
+  @include make-row();
+  margin: 250px 0 ;
+  -webkit-transition: opacity 1s ease-in;
+     -moz-transition: opacity 1s ease-in;
+      -ms-transition: opacity 1s ease-in;
+       -o-transition: opacity 1s ease-in;
+          transition: opacity 1s ease-in;
+  transition-delay: 0.5s;
+  position: relative;
+
+  @media (min-width: $breakpoint-sm) {
+    margin: 250px 0 ;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    margin: 500px 0;
+  }
+
+
+  .featuredProject__content {
+    @include make-col-ready();
+    @include make-col(12);
+    order: 2;
+    z-index: 1;
+    padding: 0;
+    @media (min-width: $breakpoint-md) {
+      @include make-col(8);
+      order: 1;
+    }
+    @media (min-width: $breakpoint-lg) {
+      @include make-col(6);
+    }
+    h3 {
+      color: $white;
+      font-size: 1.75rem;
+      font-weight: 300;
+      margin-bottom: $gutter/2;
+    }
+    p {
+      color: $white;
+      font-size: 2.25rem;
+      line-height: 1.3;
+      font-weight: 700;
+      @media (min-width: $breakpoint-md) {
+        font-size: 3.1rem;
+      }
+    }
+    a {
+      color: $white;
+    }
+  }
+  .featuredProject__image {
+    @include make-col-ready();
+    order: 1;
+    z-index: 0;
+    transform: scale(2);
+    right: -$gutter4;
+    bottom: -$gutter/2;
+    @include make-col(12);
+
+    @media (min-width: $breakpoint-sm) {
+      position: absolute;
+      max-width: 50%;
+      right: -$gutter6;
+    }
+    @media (min-width: $breakpoint-md) {
+      @include make-col(4);
+      order: 2;
+      max-width: 50%
+    }
+    @media (min-width: $breakpoint-lg) {
+      @include make-col(6);
+      transform: scale(2);
+      right: -$gutter4;
+      bottom: -$gutter;
+    }
+    @media (min-width: $breakpoint-xl) {
+      right: auto;
+      bottom: auto;
+      transform:scale(1.5) translateX(70%);
+    }
+    img {
+      max-height: 100%;
+    }
+  }
+  &.featuredProject--img-right {
+    opacity: 0;
+    margin-top: 125px;
+    &.load {
+      opacity: 1;
+    }
+  }
+
+  &.featuredProject--img-left {
+    text-align: right;
+    margin-bottom: 125px;
+    @media (min-width: $breakpoint-lg) {
+      text-align: left;
+    }
+
+    @media (min-width: $breakpoint-xl) {
+      margin-bottom: 0;
+    }
+    .featuredProject__content {
+      order: 1;
+      @media (min-width: $breakpoint-md) {
+        order: 2;
+      }
+
+    }
+    .featuredProject__image {
+      order: 2;
+      transform: scale(.75);
+      left: -55%;
+      bottom: -73%;
+      position: absolute;
+      img {
+        max-width: 300px;
+        max-height: 100%;
+        left: 0;
+        @media (min-width: $breakpoint-sm) {
+          max-width: 100%;
+        }
+        @media (min-width: $breakpoint-lg) {
+          max-height: 500px;
+        }
+        @media (min-width: $breakpoint-xl) {
+          max-height: 645px;
+        }
+      }
+      @media (min-width: $breakpoint-sm) {
+        left: -30%;
+        bottom: -50%;
+        position: absolute;
+        transform: scale(1);
+      }
+      @media (min-width: $breakpoint-md) {
+        order: 1;
+        left: 0;
+        position: relative;
+        bottom: auto;
+        transform: scale(1.5);
+      }
+      @media (min-width: $breakpoint-lg) {
+        position: static;
+        transform: scale(1) translate(20%,-15%);
+        max-height: 500px;
+      }
+      @media (min-width: $breakpoint-xl) {
+        position: static;
+        transform: scale(1) translate(25%,-35%);
+        max-height: 645px;
+      }
+    }
+  }
+}
+
+/* ================================= */
+/* SERVICE BOX ===================== */
+/* ================================= */
+
+.serviceBox__wrap {
+  @include make-row();
+  margin: 250px 0 0;
+  @media (min-width: $breakpoint-md) {
+    margin: 0 -$gutter/2;
+  }
+  .serviceBox {
+    @include make-col(10);
+		margin: 0 auto $gutter;
+    @media (min-width: $breakpoint-md) {
+      @include make-col(4);
+      padding: 0 $gutter/2;
+    }
+    .serviceBox__title {
+      text-align: center;
+      margin-top: $gutter/2;
+      .serviceBox__url {
+        display: inline-block;
+        font-size: 1.75rem;
+        font-weight: 300;
+        margin: 0 auto;
+				color: $white;
+        padding: $gutter/2 $gutter;
+        @media (min-width: $breakpoint-md) {
+          font-size: 1.25rem;
+        }
+        @media (min-width: $breakpoint-lg) {
+          font-size: 1.75rem;
+        }
+      }
+    }
+    .serviceBox__image {
+      box-shadow: 0 10px 60px rgba(0,0,0,0.4);
+      img {
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+.platforms {
+  text-align: center;
+  margin: 125px 0;
+  @include make-row();
+  .platforms__lg-heading {
+    color: $darkpurple;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2.75rem;
+    line-height: 1.1;
+    font-weight: 900;
+		letter-spacing: -0.1rem;
+    @media (min-width: $breakpoint-sm) {
+      font-size: 3.1rem;
+    }
+    @media (min-width: $breakpoint-md) {
+      font-size: 3.75rem;
+    }
+    @media (min-width: $breakpoint-lg) {
+      font-size: 5.5rem;
+    }
+    @media (min-width: $breakpoint-xl) {
+      font-size: 6.5rem;
+    }
+  }
+  .platforms__wrap {
+    @include make-col(12);
+    margin-top: $gutter2;
+    @media (min-width: $breakpoint-lg) {
+      margin-top: $gutter4;
+    }
+    h6 {
+      color: $white;
+      font-size: 1.75rem;
+      font-weight: 300;
+		}
+    h5 {
+      color: $white;
+      font-size: 2.25rem;
+      line-height: 1.3;
+      font-weight: 700;
+      margin-bottom: $gutter2;
+      @media (min-width: $breakpoint-md) {
+        margin-bottom: $gutter;
+      }
+      @media (min-width: $breakpoint-lg) {
+          font-size: 3.1rem;
+      }
+      @media (min-width: $breakpoint-xl) {
+        @include make-col(10);
+        margin: $gutter/2 auto $gutter;
+      }
+    }
+    .platforms__svg-wrap {
+      transform: scale(0.75);
+      align-items: center;
+      margin: 0 auto;
+      @media (min-width: $breakpoint-sm) {
+        transform: scale(1);
+      }
+      @media (min-width: $breakpoint-lg) {
+        @include make-row();
+      }
+      svg {
+        margin-right: auto;
+        margin-left: auto;
+        @include make-col(12);
+        @media (min-width: $breakpoint-md) {
+          @include make-col(4);
+          margin: 0 auto;
+        }
+      }
+      .platforms__wordpress {
+        margin-bottom: $gutter;
+        @media (min-width: $breakpoint-md) {
+          margin: 0 auto;
+          padding: 0 $gutter/2;
+        }
+        @media (min-width: $breakpoint-lg) {
+          padding: 0;
+        }
+      }
+      .platforms__shopify {
+        margin-bottom: 45px;
+          @media (min-width: $breakpoint-md) {
+            margin: 0 auto;
+            padding: 0 $gutter/2;
+          }
+          @media (min-width: $breakpoint-lg) {
+            padding: 0;
+          }
+      }
+      .platforms__squarespace {
+        margin: 0 auto;
+        @media (min-width: $breakpoint-md) {
+          padding: 0 $gutter/2;
+        }
+        @media (min-width: $breakpoint-lg) {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+.dashboard {
+  @include make-row();
+  margin: 0;
+  .dashboard__heading {
+    margin-bottom: $gutter;
+    @media (min-width: $breakpoint-md) {
+      margin-bottom: $gutter2;
+    }
+    @media (min-width: $breakpoint-xl) {
+      margin-bottom: $gutter3;
+    }
+    h6 {
+      color: $white;
+      font-size: 2.25rem;
+      line-height: 1.3;
+      font-weight: 700;
+      @media (min-width: $breakpoint-lg) {
+          font-size: 3.1rem;
+          @include make-col(8);
+      }
+    }
+    h5 {
+      color: $white;
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin-bottom: $gutter/2;
+    }
+  }
+  .dashboard__large {
+    @include make-col(12);
+    box-shadow: 0 10px 60px rgba(0,0,0,.4);
+    margin-bottom: $gutter/2;
+    img {
+      border-radius: 4px;
+			transition: all $anim_time;
+			&:hover {
+				transform: scale(1.025);
+			}
+    }
+  }
+  .dashboard__small_wrap {
+    @include make-row();
+    margin: 0;
+    justify-content: space-between;
+    .dashboard__small {
+      @include make-col(4);
+      box-shadow: 0 10px 60px rgba(0,0,0,.4);
+      max-width: calc(33.33333% - 10px);
+      img {
+        border-radius: 4px;
+				transition: all $anim_time;
+				&:hover {
+					transform: scale(1.025);
+				}
+      }
+    }
+  }
+}

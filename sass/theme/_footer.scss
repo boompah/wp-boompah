@@ -1,0 +1,84 @@
+/* ================================= */
+/* FOOTER ========================== */
+/* ================================= */
+
+footer.site-footer {
+  color: $white;
+  display: flex;
+  padding: 0 $gutter;
+	margin-bottom: $gutter2;
+  @media (min-width: $breakpoint-md) {
+    padding: $gutter2 0;
+    justify-content: space-between;
+		margin-bottom: 0;
+  }
+
+  div {
+    text-align: center;
+    @include make-col-ready();
+    @include make-col(12);
+    @media (min-width: $breakpoint-md) {
+      margin: 0;
+    }
+    &.social {
+      order: 0;
+      margin-top: $gutter/4;
+      a {
+        margin: 0 $gutter/2;
+        font-size: 1.5rem;
+				&:hover {
+					color: #4A1190;
+				}
+      }
+    }
+    &.email {
+      order: 1;
+      margin: 5px 0;
+			@media (min-width: $breakpoint-md) {
+				margin: 0;
+			}
+			a {
+				padding: 5px 6px 4px;
+
+				&:hover {
+					color: $purple;
+					text-decoration: none;
+				}
+			}
+    }
+    &.copyright {
+			order: 2;
+			h6 {
+				padding: 5px 6px 4px;
+			}
+		}
+    @media (min-width: $breakpoint-md) {
+      @include make-col(4);
+      &.social { order: 1;}
+      &.email { text-align: right; order: 2; }
+      &.copyright { order: 0; text-align: left; }
+    }
+  }
+
+  a {
+    display: inline-block;
+    svg {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  h6 {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+    vertical-align: middle;
+    @media (min-width: $breakpoint-md) {
+      line-height: 25px;
+    }
+    @media (min-width: $breakpoint-lg) {
+      font-size: 1rem;
+    }
+  }
+}

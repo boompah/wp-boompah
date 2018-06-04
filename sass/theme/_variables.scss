@@ -1,0 +1,26 @@
+/* ================================= */
+/* VARIABLES ======================= */
+/* ================================= */
+
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
+
+$purple: #5d16ba;
+$darkpurple: #4a1190;
+$darkgrey: #242425;
+$grey-default: #404040;
+
+$font-family-sans-serif: "Poppins", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$gutter: 30px;
+$gutter2: 60px;
+$gutter3: 90px;
+$gutter4: 120px;
+$gutter6: 180px;
+$gutter8: 240px;
+
+$primary: $purple;

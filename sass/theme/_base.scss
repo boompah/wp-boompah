@@ -1,0 +1,142 @@
+/* ================================= */
+/* BASE ============================ */
+/* ================================= */
+
+$font-family-sans-serif:  "Poppins", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$primary-font: $font-family-sans-serif;
+$medium: 1.25rem;
+$large: 2.5rem;
+$bold: 700;
+
+$color-1: $white;
+$color-2: lighten($color-1, 20%);
+$color-3: $purple;
+$color-4: $white;
+
+
+// z-index
+$content-zindex: 1;
+$layer-nav-zindex: 2;
+$nav-zindex: 3;
+$layer-content-zindex: 4;
+$trigger-zindex: 5;
+$anim_time: .25s;
+
+html, body {
+	height: 100%;
+}
+
+// Container
+.container {
+  @include make-container();
+  padding-right: $gutter;
+  padding-left: $gutter;
+  @media (min-width: $breakpoint-sm) {
+    padding-right: $gutter/2;
+    padding-left: $gutter/2
+  }
+  .row {
+    @include make-row();
+    .content-area {
+      width: 100%;
+    }
+  }
+}
+
+.wrapper {
+  position: relative;
+}
+
+// Site
+.site {
+  min-height: 100vh;
+  overflow-x: hidden;
+  &.bg-purple {
+    background: $purple;
+    a {
+      color: $white;
+    }
+    .btn {
+      background: $black;
+      border-color: $black;
+      &:hover,
+      &:active {
+        background: $white;
+        color: $purple;
+        border-color: $white;
+      }
+    }
+    a.navbar-brand {
+      margin: 0 0 0 -20px;
+    }
+  }
+  &.bg-dark_grey {
+    background: $darkgrey;
+    a {
+      color: $white;
+    }
+    .btn, .wpcf7-submit {
+      background: $purple;
+      border-color: $purple;
+      color: $white;
+      &:hover,
+      &:active {
+        background: $black;
+        color: $white;
+        border-color: $black;
+      }
+    }
+  }
+  &.bg-white,
+	&.bg- {
+    background: $white;
+    a {
+      color: $purple;
+    }
+    .wrapper-navbar {
+      nav.navbar {
+        ul.navbar-nav {
+          li.menu-item {
+            a {
+              color: #404040;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+    .headline__main {
+      color: #000;
+    }
+    footer.site-footer {
+      h6, a {
+        color: #404040;
+      }
+    }
+  }
+	
+  &.bg-purple_header {
+    a {
+      color: $purple;
+    }
+    .wrapper-navbar {
+      background: $purple;
+      a.navbar-brand {
+        margin: 0 0 0 -20px;
+      }
+    }
+    section.headline {
+      background: $purple;
+      .headline__main {
+        @media (min-width: $breakpoint-lg) {
+          max-width: none;
+        }
+      }
+    }
+    footer.site-footer {
+      h6, a {
+        color: #404040
+      }
+    }
+  }
+}
