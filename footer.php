@@ -27,7 +27,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 
 			<div class="email">
-				<h6><a href="mailto:hello@boompah.com">hello@boompah.com</a></h6>
+				<h6><a href="/contact">Say Hello</a></h6>
 			</div>
 
 		</footer><!-- #colophon -->
