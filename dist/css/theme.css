@@ -9690,7 +9690,7 @@ section.headline {
         font-size: 3rem; } }
     @media (min-width: 1200px) {
       section.headline .headline__main {
-        max-width: 900px;
+        max-width: 100%;
         font-size: 3.75rem; } }
     section.headline .headline__main .headline__img {
       width: 32px;

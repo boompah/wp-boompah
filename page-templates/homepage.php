@@ -24,7 +24,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="featuredProject__content">
 								<h3><?php the_field('section_1_heading'); ?></h3>
 								<p><?php the_field('section_1_copy'); ?></p>
-								<a href="<?php the_field('section_1_button_url'); ?>" class="btn" title="" target="_blank"><?php the_field('section_1_button_text'); ?></a>
 							</div>
 							<div class="featuredProject__image">
 								<img src="<?php the_field('section_1_image'); ?>" alt=""/>
