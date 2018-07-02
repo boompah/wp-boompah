@@ -109,11 +109,11 @@ section.headline {
     }
     @media (min-width: $breakpoint-md) {
       max-width: 690px;
-      font-size: 4rem;
+      font-size: 3rem;
     }
 		@media (min-width: $breakpoint-xl) {
       max-width: 900px;
-      font-size: 5rem;
+      font-size: 3.75rem;
     }
     .headline__img {
       width: 32px;
