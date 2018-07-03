@@ -161,20 +161,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="dashboard__heading">
 								<h5><?php the_field('section_5_heading'); ?></h5>
 								<h6><?php the_field('section_5_copy'); ?></h6>
-							</div>
-							<div class="dashboard__large">
-								<img src="<?php the_field('section_5_large_image'); ?>" alt=""/>
-							</div>
-							<div class="dashboard__small_wrap">
-								<div class="dashboard__small">
-									<img src="<?php the_field('section_5_small_image_1'); ?>" alt=""/>
-								</div>
-								<div class="dashboard__small">
-									<img src="<?php the_field('section_5_small_image_2'); ?>" alt=""/>
-								</div>
-								<div class="dashboard__small">
-									<img src="<?php the_field('section_5_small_image_3'); ?>" alt=""/>
-								</div>
+								<?php get_template_part('inc/mailchimp-embed'); ?>
 							</div>
 						</section>
 
