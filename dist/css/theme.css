@@ -10762,6 +10762,9 @@ main.contact .headline__sub a:hover {
         transition: all 0.25s; }
         .dashboard .dashboard__small_wrap .dashboard__small img:hover {
           transform: scale(1.025); }
+  .dashboard .mailchimp-signup {
+    max-width: 600px;
+    margin-top: 40px; }
 
 /* ================================= */
 /* ABOUT PAGE ====================== */
