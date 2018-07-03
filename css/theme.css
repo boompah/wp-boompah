@@ -10711,8 +10711,11 @@ main.contact .headline__sub a:hover {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  margin: 0; }
+  margin: 0;
+  text-align: center; }
   .dashboard .dashboard__heading {
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px; }
     @media (min-width: 768px) {
       .dashboard .dashboard__heading {
@@ -10724,7 +10727,9 @@ main.contact .headline__sub a:hover {
       color: #fff;
       font-size: 2.25rem;
       line-height: 1.3;
-      font-weight: 700; }
+      font-weight: 700;
+      margin-left: auto;
+      margin-right: auto; }
       @media (min-width: 992px) {
         .dashboard .dashboard__heading h6 {
           font-size: 3.1rem;
@@ -10764,7 +10769,9 @@ main.contact .headline__sub a:hover {
           transform: scale(1.025); }
   .dashboard .mailchimp-signup {
     max-width: 600px;
-    margin-top: 40px; }
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto; }
 
 /* ================================= */
 /* ABOUT PAGE ====================== */

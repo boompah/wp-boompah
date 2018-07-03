@@ -312,8 +312,13 @@
 .dashboard {
   @include make-row();
   margin: 0;
+  text-align: center;
+
   .dashboard__heading {
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: $gutter;
+
     @media (min-width: $breakpoint-md) {
       margin-bottom: $gutter2;
     }
@@ -325,6 +330,9 @@
       font-size: 2.25rem;
       line-height: 1.3;
       font-weight: 700;
+      margin-left: auto;
+      margin-right: auto;
+
       @media (min-width: $breakpoint-lg) {
           font-size: 3.1rem;
           @include make-col(8);
@@ -370,5 +378,7 @@
   .mailchimp-signup {
     max-width: 600px;
     margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
