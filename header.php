@@ -153,7 +153,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <body <?php body_class(); ?>>
 
-<div class="hfeed site bg-<?php the_field("color_scheme") ?>" id="page">
+<div class="hfeed site bg-white" id="page">
 
 	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content','understrap' ); ?></a>
@@ -165,11 +165,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
 					<!-- Boompah Logo -->
-					<svg xmlns="http://www.w3.org/2000/svg" width="150" height="23" viewBox="0 0 150 23">
-						<g fill="#fff" fill-rule="evenodd">
-							<path d="M9.92 17.43a1.866 1.866 0 0 0 1.869-1.873c0-1.037-.891-1.873-1.868-1.873H6.127v3.745h3.794zM8.858 8.93a1.867 1.867 0 0 0 1.868-1.872 1.867 1.867 0 0 0-1.868-1.873h-2.73V8.93h2.73zM.466 22.097V.491h9.512c3.449 0 6.38 2.967 6.38 6.424 0 1.469-.546 2.823-1.38 3.889 1.466 1.181 2.443 2.996 2.443 4.955 0 3.428-2.902 6.338-6.322 6.338H.466zM29.406 6.137c-2.817 0-5.116 2.304-5.116 5.156 0 2.824 2.3 5.157 5.116 5.157 2.844 0 5.143-2.333 5.143-5.157a5.145 5.145 0 0 0-5.143-5.156m0-5.646c5.948 0 10.776 4.868 10.776 10.832 0 5.962-4.828 10.774-10.776 10.774-5.949 0-10.748-4.812-10.748-10.774C18.658 5.359 23.457.49 29.406.49M52.857 6.137c-2.817 0-5.116 2.304-5.116 5.156 0 2.824 2.299 5.157 5.116 5.157C55.7 16.45 58 14.117 58 11.293c0-2.852-2.299-5.156-5.143-5.156m0-5.646c5.948 0 10.776 4.868 10.776 10.832 0 5.962-4.828 10.774-10.776 10.774-5.95 0-10.748-4.812-10.748-10.774C42.109 5.359 46.908.49 52.857.49M77.198 8.499L85.963.49h2.558v21.605h-5.69v-11.09l-5.633 5.156-5.661-5.128v11.062h-5.69V.491h2.557zM97.373 11.466h3.506c1.724 0 3.104-1.354 3.104-3.082a3.095 3.095 0 0 0-3.104-3.111h-3.506v6.193zM91.712.491h9.081c4.368 0 7.931 3.572 7.931 7.95 0 4.35-3.535 7.923-7.816 7.923h-3.535v5.732h-5.661V.491zM115.479 14.491h4.397l-2.185-4.753-2.212 4.753zm-9.168 7.605L116.37.49h2.557l10.145 21.606h-5.661l-1.322-2.823h-8.823l-1.293 2.823h-5.662zM137.033.49v7.692h6.84V.491h5.661v21.605h-5.661v-8.239h-6.84v8.24h-5.661V.49z"/>
-						</g>
-					</svg>
+					boompah
 				</a>
 
 				<a class="cd-nav-trigger">Menu<i class="fas fa-bars cd-icon"></i><i class="far fa-times-circle cd-icon"></i>

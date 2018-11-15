@@ -26,10 +26,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<a href="https://www.instagram.com/boompah/" alt="Boompah on Instagram" target="_blank" class="social__link"><i class="fab fa-instagram"></i></a>
 			</div>
 
-			<div class="email">
-				<h6><a href="/contact">Say Hello</a></h6>
-			</div>
-
 		</footer><!-- #colophon -->
 	</div><!-- container end -->
 </div><!-- wrapper end -->

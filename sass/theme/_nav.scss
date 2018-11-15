@@ -20,12 +20,6 @@
 
     // Logo
     a.navbar-brand {
-      line-height: 23px;
-      padding: 20px;
-      background-color: $purple;
-      @media (max-width: $breakpoint-md) {
-        margin-left: -20px;
-      }
       svg {
         vertical-align: middle;
       }

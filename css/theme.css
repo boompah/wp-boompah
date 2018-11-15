@@ -9758,15 +9758,8 @@ section.headline {
       padding: 30px 0; } }
   .wrapper-navbar nav.navbar {
     padding: 15px 0; }
-    .wrapper-navbar nav.navbar a.navbar-brand {
-      line-height: 23px;
-      padding: 20px;
-      background-color: #5d16ba; }
-      @media (max-width: 768px) {
-        .wrapper-navbar nav.navbar a.navbar-brand {
-          margin-left: -20px; } }
-      .wrapper-navbar nav.navbar a.navbar-brand svg {
-        vertical-align: middle; }
+    .wrapper-navbar nav.navbar a.navbar-brand svg {
+      vertical-align: middle; }
     .wrapper-navbar nav.navbar ul.navbar-nav {
       margin-top: 10px; }
       @media (min-width: 768px) {

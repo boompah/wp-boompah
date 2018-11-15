@@ -41,7 +41,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</div>
 						</section>
 
-
+						<section style="border: 1px solid red; height: 600px;">
+							<h2>Recent Posts</h2>
+							<ul>
+							<?php
+								$args = array( 'numberposts' => '5' );
+								$recent_posts = wp_get_recent_posts( $args );
+								foreach( $recent_posts as $recent ){
+									echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
+								}
+								wp_reset_query();
+							?>
+							</ul>
+						</section>
 
 						<section class="serviceBox__wrap">
 							<div class="serviceBox">
